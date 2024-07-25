@@ -7,9 +7,11 @@ public class Main {
         if (n >= 0 && n <= 10000) {
             if (n >= 3000) {
                 System.out.println("book");
-            } else if (n < 1000) {
-                System.out.println("no");
-            }     
+            } else if (n >= 1000) {
+                System.out.println("mask");
+            } else {
+                System.out.println("no"); 
+            }    
         }
     }
 }
