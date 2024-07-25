@@ -7,17 +7,18 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        if (a <= b && b <= c && a <= c) {
+        int temp = a;
+
+        if (a <= b && a <= c) {
             System.out.print("1");
         } else {
             System.out.print("0");
         }
-        System.out.print(" ");
 
-        if (a == b && b == c && a == c) {
-            System.out.print("1");
+        if (a == b && a == c) {
+            System.out.print(" 1");
         } else {
-            System.out.print("0");
+            System.out.print(" 0");
         }  
     }
 }
