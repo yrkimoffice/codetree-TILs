@@ -11,10 +11,13 @@ public class Main {
 
         // 수학점수가 높은 경우 더 높은 학생 이름 출력
         // 수학점수가 같으면 영어점수가 더 높은 학생 이름 출력
-        if (mathA > mathB) {
-            System.out.println("A");   
-        } else if (mathA == mathB) {
-            System.out.println(engA > engB ? "A" : "B");
+        if (mathA != mathB) {
+            System.out.println(mathA > mathB ? "A" : "B");
+        } else {
+            if (engA != engB) {
+                System.out.println(engA > engB ? "A" : "B");
+            }
         }
+        
     }
 }
