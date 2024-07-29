@@ -7,21 +7,21 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        //a, b, c
-        //a, c, b
+        if (a >= b) {
+            if (a >= c) {
+                System.out.print(a);
+            } else {
+                System.out.print(c);
+            }
+        }
+        else {
+            if (b >= c) {
+                System.out.print(b);
+            } else {
+                System.out.print(c);
+            }
+        }
 
-        //c, a, b
-        //c, b, a
-        //b, a, c
-        //b, c, a
 
-
-        if ((a <= b && b <= c) || (b <= a && a <= c)) {
-            System.out.println(c);
-        } else if ((a <= c && c <= b) || (c <= a && c <= b)) {
-            System.out.println(b);
-        } else if ((c <= b && b <= a) || (b <= c && c <= a)) {
-            System.out.println(a);
-        } 
     }
 }
